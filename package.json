@@ -1,0 +1,22 @@
+{
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.5.7",
+    "@astrojs/starlight": "^0.21.1",
+    "astro": "^4.5.1",
+    "npx": "^10.2.2",
+    "sharp": "^0.32.6",
+    "starlight-blog": "^0.5.1",
+    "starlight-links-validator": "^0.6.0",
+    "typescript": "^5.4.2"
+  }
+}
