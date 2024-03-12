@@ -32,7 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install NPM
-        run: apt install npm nodejs
+        run: sudo apt install npm nodejs
       - name: Install Astro
         run: npm install astro
       - name: Install Starlight Blog
