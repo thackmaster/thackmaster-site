@@ -7,8 +7,9 @@ import starlightBlogPlugin from 'starlight-blog';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://thackmaster.github.io',
-	base: '/thackmaster-site',
+	//uncomment when deploying
+	//site: 'https://thackmaster.github.io',
+	//base: '/thackmaster-site',
 	image: {
 		service: passthroughImageService(),
 	},
@@ -42,14 +43,11 @@ export default defineConfig({
 				{ label: 'Home', link: '/'},
 				{
 					label: 'Containers',
-					autogenerate: { directory: 'containers'},
+					autogenerate: { directory: 'containers' },
 				},
 				{
 					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
-					],
+					autogenerate: { directory: 'guides' },
 				},
 				{
 					label: 'Reference',

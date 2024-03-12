@@ -1,5 +1,5 @@
 ---
-title: Bazarr
+title: Overseerr
 ---
 
 Containers
