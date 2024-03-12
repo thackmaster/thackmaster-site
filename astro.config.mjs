@@ -7,6 +7,8 @@ import starlightBlogPlugin from 'starlight-blog';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://thackmaster.github.io',
+	base: '/thackmaster-site',
 	image: {
 		service: passthroughImageService(),
 	},
