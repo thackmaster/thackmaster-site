@@ -1,5 +1,5 @@
 ---
-title: How to use Persistent Docker Volumes over NFS
+title: Using Persistent Docker Volumes over NFS
 lastUpdated: 2024-03-11
 sidebar:
     badge: New
