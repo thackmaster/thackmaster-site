@@ -16,8 +16,9 @@ Bookstack is a simple, self-hosted, easy-to-use platform for organizing and stor
 
 You can find the latest Docker Compose at [https://hub.docker.com/r/linuxserver/bookstack](https://hub.docker.com/r/linuxserver/bookstack) with mine posted below. Since this is supported by a database, it can be a little tricky if you are wanting to use an already existing MySQL database. You may also substitute Docker Volumes for file paths if you so choose.
 
-> This config file directly exposes passwords. You may want to use environment variables to hide secret variables.
-{: .prompt-danger}
+:::danger
+This config file directly exposes passwords. You may want to use environment variables to hide secret variables.
+:::
 
 ## Compose File
 ```yaml

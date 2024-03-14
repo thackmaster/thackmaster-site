@@ -6,7 +6,6 @@ Uptime Kuma is a very popular resource for self-hosters looking to monitor their
 
 :::caution
 This volume is not persistant, and will be destroyed when you shut down the container. If you would like a persistant container, create it before running the command.
-
 :::
 
 ``` docker

@@ -25,7 +25,7 @@ I used to use file paths exclusively because I was under the impression that Doc
 - You have NFS installed and configured, and your file paths mounted on your device.
 - You are able to read, write, and execute files from this NFS path.
 
-:::info
+:::note
 While this guide will use examples from a MySQL container when using [Standard Notes](#), similar issues have been seen with other containers that were able to be resolved with this method.
 :::
 
@@ -37,9 +37,11 @@ chown: changing ownership of '/var/lib/mysql': Operation not permitted
 ## Walkthrough
 ### CMD
 #### Create Volume
-> This must be done on the machine where the volume is going to be stored. For example, if you are on machine1 and want the volume to be stored on machine2, you would need to run these commands on machine2.
-> All of the following commands need to be run on the machine where the volume will be stored.
-{: .prompt-warning }
+:::caution
+This must be done on the machine where the volume is going to be stored. For example, if you are on machine1 and want the volume to be stored on machine2, you would need to run these commands on machine2.
+
+All of the following commands need to be run on the machine where the volume will be stored.
+:::
 
 First, let's create our Docker volume.
 
@@ -77,8 +79,9 @@ Next, we'll install the `nfs-common` package on our machine to enable NFS. You c
 sudo apt update && sudo apt install nfs-common
 ```
 
-> Remember that these are the commands for distros that use `apt` as their package manager (Debian, Ubuntu). You may have to alter your commands and/or package for other package managers.
-{: .prompt-info }
+:::note
+Remember that these are the commands for distros that use `apt` as their package manager (Debian, Ubuntu). You may have to alter your commands and/or package for other package managers.
+:::
 
 #### Use the Volume
 Now, we're going to run our container to use this new volume. Keeping in mind our values from earlier:
