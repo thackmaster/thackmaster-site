@@ -1,7 +1,7 @@
 ---
 title: Bookstack
 #description: A guide in my new Starlight docs site.
-lastUpdated: 2023-03-11
+#lastUpdated: 2023-03-11
 #sidebar:
     #badge: New
 ---
@@ -71,3 +71,10 @@ networks:
 Once the compose file is ran, you can find Bookstack at `<serverip>:6875` and you'll be greeted with the following page:
 
 ![](../../../assets/images/bookstack.png)
+
+As of writing, the default credential set is `admin@admin.com` and `password`.
+
+# References
+1. [Bookstack Website](https://bookstackapp.com)
+2. [https://github.com/linuxserver/docker-bookstack](https://github.com/linuxserver/docker-bookstack)
+3. [https://www.bookstackapp.com/docs/admin/installation/#docker](https://www.bookstackapp.com/docs/admin/installation/#docker)
